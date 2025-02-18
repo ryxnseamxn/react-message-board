@@ -1,0 +1,21 @@
+{
+  "name": "react-message-board",
+  "version": "1.0.0",
+  "description": "This is the second iteration of my message board app using ReactJS, Postgres, and Node/Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryxnseamxn/react-message-board.git"
+  },
+  "workspaces": ["packages/*"],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryxnseamxn/react-message-board/issues"
+  },
+  "homepage": "https://github.com/ryxnseamxn/react-message-board#readme"
+}
