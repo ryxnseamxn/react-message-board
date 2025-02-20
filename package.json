@@ -4,18 +4,28 @@
   "description": "This is the second iteration of my message board app using ReactJS, Postgres, and Node/Express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run start:dev",
+    "start:dev": "concurrently \"npm run start:client\" \"npm run start:server\"",
+    "start:client": "npm run start --workspace=packages/client",
+    "start:server": "npm run serve --workspace=packages/server",
+    "build": "npm run build --workspace=packages/client",
+    "deploy": "npm run build && firebase deploy"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ryxnseamxn/react-message-board.git"
   },
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ryxnseamxn/react-message-board/issues"
   },
-  "homepage": "https://github.com/ryxnseamxn/react-message-board#readme"
+  "homepage": "https://github.com/ryxnseamxn/react-message-board#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
 }

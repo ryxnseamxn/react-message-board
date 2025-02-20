@@ -4,19 +4,19 @@ class Storage {
             [crypto.randomUUID()]: {
                 text: "Hi there!",
                 user: "Amando",
-                added: new Date()
+                added: new Date().toDateString()
             },
             [crypto.randomUUID()]: {
                 text: "Hello World!",
                 user: "Charles",
-                added: new Date()
+                added: new Date().toDateString()
             }
         };
         
     }
 
     addMessage(text, user) {
-        const date = new Date();
+        const date = new Date().toDateString();
         const id = crypto.randomUUID(); 
         this.storage[id] = { text: text, user: user, added: date }; 
         return id; 
@@ -32,4 +32,4 @@ class Storage {
     }
 }
 
-export default new Storage(); 
+module.exports = new Storage();

@@ -3,7 +3,7 @@ const asyncHandler = require("express-async-handler");
 
 exports.getMessages = asyncHandler(async (req, res) => {
     let messages = db.getMessages(); 
-    res.send(json({ messages: messages})); 
+    res.json({ messages: messages}); 
 }); 
 
 exports.addMessage = asyncHandler(async (req, res) => {
