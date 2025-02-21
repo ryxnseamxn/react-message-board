@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AddMessage from "./AddMessage";
+import { Link } from "react-router-dom";
+import Message from "../message/MessagePage"
 import config from '../config';
 
 const Home = () => {
@@ -19,13 +21,12 @@ const Home = () => {
             }));
 
             setMessages(messagesArray);
-
-
+            
         } catch (error) {
             console.log(`Error occured when fetching: ${error.message}`)
         }
     } 
-
+    
     useEffect(() => {
         fetchMessages(); 
     }, []);
@@ -39,6 +40,9 @@ const Home = () => {
                         <h3>{message.user}</h3>
                         <p>{message.text}</p>
                         <p>{message.added}</p>
+                        <Link to={`/message/${message.id}`}>
+                            <button>View Message</button>
+                        </Link>
                     </li>
                 ))
             ) : (
