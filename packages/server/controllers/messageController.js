@@ -12,3 +12,7 @@ exports.addMessage = asyncHandler(async (req, res) => {
     res.send(db.addMessage(text, user)); 
 }); 
 
+exports.getMessage = asyncHandler(async (req, res) => {
+    let message = db.getMessage(req.params.id); 
+    res.json({ message: message })
+});
