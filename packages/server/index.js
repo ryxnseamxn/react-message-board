@@ -5,8 +5,8 @@ const functions = require('firebase-functions');
 const app = express(); 
 
 const allowedOrigins = [
-    'https://your-production-domain.com', 
-    'https://www.your-production-domain.com', 
+    'https://react-message-app-31d4f.firebaseapp.com', 
+    'https://react-message-app-31d4f.web.app', 
     'http://localhost:3000'
 ]
 

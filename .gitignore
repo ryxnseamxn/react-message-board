@@ -156,3 +156,8 @@ sketch
 
 # End of https://www.toptal.com/developers/gitignore/api/react,node
 node_modules
+
+.firebase/
+firebase-debug.log
+.firebaserc
+.firebase/hosting.cGFja2FnZXMvY2xpZW50L2J1aWxk.cache
