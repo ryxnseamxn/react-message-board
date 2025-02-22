@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import AddMessage from "./AddMessage";
 import { Link } from "react-router-dom";
-import Message from "../message/MessagePage"
 import config from '../config';
+import '../App.css';
 
 const Home = () => {
     const [messages, setMessages] = useState([]); 
@@ -36,14 +36,14 @@ const Home = () => {
             <AddMessage onMessageAdded={fetchMessages}/>
             {messages.length > 0 ? (
                 messages.map((message) => (
-                    <li key={message.id}>
+                    <div key={message.id}>
                         <h3>{message.user}</h3>
                         <p>{message.text}</p>
                         <p>{message.added}</p>
                         <Link to={`/message/${message.id}`}>
                             <button>View Message</button>
                         </Link>
-                    </li>
+                    </div>
                 ))
             ) : (
                 <p>Uh oh! No posts found</p>

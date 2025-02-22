@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import config from '../config';
+import '../App.css';    
 
 const MessagePage = () => {
     const [message, setMessage] = useState(null);
