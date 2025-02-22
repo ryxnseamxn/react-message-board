@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import config from '../config';
+import '../App.css';
 
 const AddMessage = ({ onMessageAdded }) => {
     const [formData, setFormData] = useState({
