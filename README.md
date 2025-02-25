@@ -35,7 +35,7 @@ $ npm start
 
 Most importantly, I want to use a db so the messages will persist. 
 
-Secondly, I want a profanity filter, because I don't trust y'all
+Secondly, I want a profanity filter, because I don't trust y'all (done)
 
 ## Technologies used 
 
