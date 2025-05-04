@@ -36,7 +36,7 @@ const Home = () => {
             <AddMessage onMessageAdded={fetchMessages}/>
             {messages.length > 0 ? (
                 messages.map((message) => (
-                    <div key={message.id}>
+                    <div key={message.id} className="message-container">
                         <h3>{message.user}</h3>
                         <p>{message.text}</p>
                         <p>{message.added}</p>
