@@ -8,6 +8,8 @@ You can enter a username, message, and post your comment! Very Straightforward!
 
 ## Usage
 
+# This is no longer being hosted in the cloud (I am broke)
+
 Go to the link for the truth, or host locally if you're demented
 
 ```console 
@@ -25,10 +27,18 @@ $ npm install -g firebase-tools
 $ firebase login
 ```
 
+then, install the required dependencies with 
+
+```console
+$ npm install
+```
+
+in the root directory
+
 Finally, do 
 
 ```console 
-$ npm start
+$ npm run start
 ```
 
 ## Future Plans 
